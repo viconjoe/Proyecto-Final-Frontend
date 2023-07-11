@@ -1,13 +1,13 @@
 import './App.css'
 
-import { useState } from React
+import { useState } from 'react'
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
 
 
 function App() {
-
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  
   return (
     <>
 
