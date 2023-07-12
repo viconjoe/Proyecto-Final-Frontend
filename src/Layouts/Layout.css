@@ -1,0 +1,10 @@
+#main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima será la altura máximo de toda la pantalla*/
+    background-color: rgb(189, 211, 253);
+}
+
+.footer {
+    margin-top:auto; /* para que el footer vaya a la base de la pantalla */
+}

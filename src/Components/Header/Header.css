@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(131, 243, 131);
+}
+
+h1 {
+    margin:0;
+}
+
+#title {
+    font-size: 22px;
+    font-style: italic;
+    color: #474c4d;
+    margin-left: 5%;
+}
+
+.top-menu {
+    margin-left: 15%;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(253, 252, 252);
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
