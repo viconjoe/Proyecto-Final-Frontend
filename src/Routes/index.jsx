@@ -5,6 +5,7 @@ import Login from '../Pages/Login/Login'
 import Layout from '../Layouts/Layout'
 import PictoPlan from '../Pages/Pictoplan/Pictoplan'
 import AddImages from '../Pages/AddImages/AddImages'
+import Relax from '../Pages/Relax/Relax'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         {
           path: '/addimages',
           element: <AddImages />
+        },
+        {
+          path: '/relax',
+          element: <Relax />
         },
 
     ]

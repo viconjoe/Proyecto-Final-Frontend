@@ -1,24 +1,35 @@
 import React from 'react'
 import './Home.css'
+
+
 function Picto() {
   return (
     <>
       <div className='mother-box'>
 
-        <div className='presentation'>
+        <div className='children-box'>
 
-          <div className='board'>
-            <img className='picto' src='../../../public/Images/1.png'/>
-            <img className='picto' src='../../../public/Images/2.png'/>
-            <img className='picto' src='../../../public/Images/3.png'/>
-            <img className='picto' src='../../../public/Images/4.png'/>
+
+          <div className='presentation'>
+
+            <div className='board'>
+              <img className='picto' src='../../../public/Images/1.png'/>
+              <img className='picto' src='../../../public/Images/2.png'/>
+              <img className='picto' src='../../../public/Images/3.png'/>
+              <img className='picto' src='../../../public/Images/4.png'/>
+            </div>
+
+            <div className='information'>
+              <p>Nuestra aplicación es facil de usar. Con ella, los cuidadores y los padres pueden crear secuencias personalizadas que preparen a los niños para las actividades diarias, como cepillarse los dientes, bañarse, vestirse y comer. De esta forma, se proporciona a los chicos y chicas una comprensión visual y estructurada de las rutinas, reduciendo la ansiedad y mejorando su capacidad para seguir instrucciones.</p>
+            </div>
+          
           </div>
 
-          <div className='information'>
-            <p>Nuestra herramienta utiliza pictogramas y secuencias visuales para preparar a los niños para las actividades diarias. Con nuestra aplicación, los cuidadores pueden crear secuencias personalizadas, como cepillarse los dientes, bañarse, vestirse y comer. Esto proporciona a los niños una comprensión visual y estructurada de las actividades, reduciendo la ansiedad y mejorando su capacidad para seguir instrucciones. Nuestra aplicación es fácil de usar y ofrece pictogramas y opciones de personalización. Únete a nosotros y apoya el crecimiento y la independencia de los niños con autismo.</p>
+          <div>
+            <div className='panel-login'>
+                <a href="#" className='myButtonLogin'>Abrir Sesión</a>
+            </div>
           </div>
-    
-        
 
         </div>
 
