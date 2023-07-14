@@ -1,0 +1,39 @@
+.pictoplan-box {
+    width: 100vw;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex: 1; /* Asigna la totalidad de lo que quede */
+}
+
+.play-pictos {
+    border: 3px solid rgb(127, 173, 127);
+    border-radius: 8%;
+    margin-top: 4%;
+    margin-left: 3%;
+    width: 35%;
+    height: 700px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(210, 231, 250);
+}
+
+.btn-play {
+    width: 15%;
+    height: 15%;
+    border-radius: 20%;
+}
+
+.mySecuences {
+    border: 3px solid rgb(127, 173, 127);
+    border-radius: 4%;
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 50%;
+    height: 700px;
+    background-color: whitesmoke;
+    background-color: rgb(210, 231, 250);
+}

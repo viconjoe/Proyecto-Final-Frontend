@@ -1,0 +1,31 @@
+.menu-videos {
+    border-radius: 15px;
+    border: 5px solid whitesmoke;
+    margin-left: 3%;
+    margin-top: 3%;
+    background-color: rgb(210, 255, 210);
+    width: 20%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 30px;
+}
+
+.cinema {
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-right: 3%;
+    border:5px solid whitesmoke;
+    background-color: rgb(231, 253, 255);
+    width: 65%;
+    height: 700px;
+}
+
+.relax-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -18,7 +18,16 @@ function Pictoplan() {
 
   return (
     <>
+      <div className='pictoplan-box'>
 
+        <div className='mySecuences'>
+
+        </div>
+
+        <div className='play-pictos'>
+            <button className='btn-play'><h1>Play</h1></button>
+        </div>
+      </div>
     </>
   )
 }
