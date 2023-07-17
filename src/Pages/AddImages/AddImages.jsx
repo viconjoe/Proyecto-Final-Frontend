@@ -10,17 +10,17 @@ function AddImages() {
 
   useEffect(() => {
     getPictogramList()
-  }, [])
+
+  }, [secuence])
 
   async function getPictogramList() {
     const data = await getPictograms()
     setPictograms(data)
-    console.log(data)
+  
   }
 
   function handlePictoClick(num) {
-    setSecuence((oldArray) => [...oldArray, num]) 
-    console.log(secuence)
+    setSecuence((oldArray) => [...oldArray, num])
   } 
 
   function displayPictograms() {
@@ -34,17 +34,36 @@ function AddImages() {
     })
     return pictogramList
   }
-
+  function handleClick(index){
+      const data = [].concat(secuence)      
+      const imgdelete = data.splice(index,1)
+      setSecuence(data)
+  }
   function displaySecuences() {
-    const newSecuence = secuence.map((pictogram, index)=> {
-      return (<span key={index} >{pictogram}-</span>)
+    return secuence.map((pictogram, index)=> {
+      return (<img onClick={(e)=>handleClick(index)}className='new-picto-secuence' key={index} src={`../../../public/Images/${pictogram}.png`} ></img>)
 
     })
-    return newSecuence
+    
+  }
+
+  function handleClean(){
+    setSecuence([])
   }
 
   return <>
-    <div className='new-secuence'>{displaySecuences()}</div>
+    <div className='crear-enviar-secuence'>
+      <div className='new-secuence'>{displaySecuences()}</div>
+      
+      <div className='guardar-borrar'>
+        <div><a href="#" className='guardar'>Guardar</a></div>
+        <br></br>
+        <br></br>
+        <div><a onClick={(e)=>handleClean()} href="#" className='guardar'>Borrar</a></div>
+      </div>
+    
+    </div>
+    
     <div className='addImages-box'>{displayPictograms()}</div>
   </> 
 }

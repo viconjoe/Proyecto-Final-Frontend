@@ -1,6 +1,6 @@
 .addImages-box {
     border-radius: 15px;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 2%;
     border: 5px solid whitesmoke;
     background-color: rgb(212, 248, 252);
@@ -8,4 +8,38 @@
     height: 600px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.new-picto-secuence {
+    width: 4%;
+    height: auto;
+    margin:0.4%;
+}
+
+.new-secuence {
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 80%;
+}
+
+.crear-enviar-secuence {
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.guardar {
+    font-size: 160%;
+    font-weight: bold;
+    color:rgb(17, 17, 121);
+}
+
+.guardar-borrar {
+    margin-top: 1.5%;
+    margin-left: 3.2%;
+    width: 6%;
+    height: auto;
 }

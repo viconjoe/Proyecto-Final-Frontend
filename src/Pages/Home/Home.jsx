@@ -24,7 +24,7 @@ function Picto() {
             </div>
 
             <div className='information'>
-              <p>Nuestra aplicación es facil de usar. Con ella, los cuidadores y los padres pueden crear secuencias cotidianas personalizadas, como cepillarse los dientes, bañarse, vestirse y comer. De esta forma, se proporciona a los chicos y chicas una comprensión visual y estructurada de las rutinas, reduciendo la ansiedad y mejorando su capacidad para seguir instrucciones.</p>
+              <p>PictoPlanKids es una aplicación que permite crear secuencias personalizadas de actividades cotidianas para niños y niñas con autismo, como cepillarse los dientes, bañarse, vestirse y comer. De esta forma, se proporciona a estos chicos y chicas una comprensión visual y estructurada de las rutinas, reduciendo la ansiedad y mejorando su capacidad para seguir instrucciones.</p>
             </div>
           
           </div>
