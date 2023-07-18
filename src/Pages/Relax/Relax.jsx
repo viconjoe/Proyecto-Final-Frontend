@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Relax.css'
-import { Link } from 'react-router-dom'
+
 
 
 // Código escrito para usar el menú de videos como un objeto.

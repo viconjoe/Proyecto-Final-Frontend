@@ -24,23 +24,23 @@ function Picto() {
             </div>
 
             <div className='information'>
-              <p>PictoPlanKids es una aplicación que permite crear secuencias personalizadas de actividades cotidianas para niños y niñas con autismo, como cepillarse los dientes, bañarse, vestirse y comer. De esta forma, se proporciona a estos chicos y chicas una comprensión visual y estructurada de las rutinas, reduciendo la ansiedad y mejorando su capacidad para seguir instrucciones.</p>
+              <p>PictoPlanKids es una aplicación que permite crear secuencias personalizadas de actividades cotidianas para niños y niñas con autismo, como cepillarse los dientes, bañarse, vestirse y comer. De esta forma, se les facilita una mejor comprensión visual y estructurada de las rutinas, reduciendo la ansiedad y mejorando su capacidad para seguir instrucciones.</p>
             </div>
           
           </div>
 
           <div className='signin'>
               <form>
-                <label><h1 id="title">Sign in</h1></label>
+                <label><h1 className="title">Sign in</h1></label>
 
                 <label>
-                  <br></br>Email:<br></br>
-                  <input type="text" value={email} onChange={(e) => {setEmail(e.target.value)}}></input><br></br>
+                  <br></br><p className='text-login' >Email:</p><br></br>
+                  <input className='text' type="text" value={email} onChange={(e) => {setEmail(e.target.value)}}></input><br></br>
                 </label>
             
                 <label>
-                  <br></br>Password:<br></br>
-                  <input type="text" value={password} onChange={(e) => {setPassword(e.target.value)}}></input><br></br>
+                  <br></br><p className='text-login' >Password</p><br></br>
+                  <input className='text' type="text" value={password} onChange={(e) => {setPassword(e.target.value)}}></input><br></br>
                 </label>
             
                 <div className='login-btn'>

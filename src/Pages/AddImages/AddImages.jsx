@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './AddImages.css'
 import PictogramModel from '../../Components/PictogramModel/PictogramModel'
 import { getPictograms } from '../../Services/pictos'
+import { updateSecuencia } from '../../Services/secuencias'
 
 function AddImages() {
 
@@ -51,18 +52,27 @@ function AddImages() {
     setSecuence([])
   }
 
+  async function handleSave(){
+    
+    await updateSecuencia(1, secuence)
+    console.log('Secuencia guardada')
+  }
+
   return <>
     <div className='crear-enviar-secuence'>
       <div className='new-secuence'>{displaySecuences()}</div>
       
       <div className='guardar-borrar'>
-        <div><a href="#" className='guardar'>Guardar</a></div>
+        <br></br>
+        <div><a onClick={handleSave} href="#" className='guardar'>Guardar</a></div>
         <br></br>
         <br></br>
-        <div><a onClick={(e)=>handleClean()} href="#" className='guardar'>Borrar</a></div>
+        <div><a onClick={handleClean} href="#" className='guardar'>Borrar</a></div>
+        <br></br>
       </div>
     
     </div>
+      <div><p className='cartel-de-borrar'>Para borrar una imagen seleccionada haz click encima de ella</p></div>
     
     <div className='addImages-box'>{displayPictograms()}</div>
   </> 

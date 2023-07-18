@@ -1,6 +1,6 @@
 .addImages-box {
     border-radius: 15px;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 2%;
     border: 5px solid whitesmoke;
     background-color: rgb(212, 248, 252);
@@ -14,6 +14,7 @@
     width: 4%;
     height: auto;
     margin:0.4%;
+    border-radius: 12px;
 }
 
 .new-secuence {
@@ -32,14 +33,22 @@
 }
 
 .guardar {
+    margin-left: 8%;;
     font-size: 160%;
     font-weight: bold;
     color:rgb(17, 17, 121);
 }
 
 .guardar-borrar {
+    border-radius: 12px;
+    background-color: rgb(250, 244, 237);
     margin-top: 1.5%;
-    margin-left: 3.2%;
+    margin-left: 2.8%;
     width: 6%;
     height: auto;
+}
+
+.cartel-de-borrar {
+    margin-left: 2.5%;
+    font-size: 150%;
 }

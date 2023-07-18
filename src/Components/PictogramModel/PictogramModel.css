@@ -1,6 +1,7 @@
 .picto {
-    margin: 20px;
-    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 136px;
     height: auto;
     border-radius: 12px;
 }
