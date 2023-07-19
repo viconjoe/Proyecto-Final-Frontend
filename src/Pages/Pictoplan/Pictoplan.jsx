@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import './Pictoplan.css'
 import {getSecuencia} from '../../Services/secuencias'
+import ShowPictoModel from '../../Components/ShowPictoModel/ShowPictoModel'
 
 function Pictoplan() {
 
@@ -30,7 +31,7 @@ function displaySecuences() {
   }
 
   function handleShowpictosSecuence2(){
-    if(count<secuencia.length){
+    if(count<secuencia.length - 1){
       setCount(count+1)
     } else {
       setCount(-1)
@@ -43,9 +44,10 @@ function displaySecuences() {
     if(count === -1){
       return (<button className='btn-play' onClick={handleShowpictosSecuence1}><h1>Play</h1></button>)
     }else{
-      return (<div className='show-picto-model'> <img  onClick={handleShowpictosSecuence2} className='big-picto' src={`../../../public/Images/${secuencia[count].id}.png`} /></div>)
+      return (<ShowPictoModel pictoId={secuencia[count].id} handleShowBigPicto={handleShowpictosSecuence2}/>)
     }
   }
+
   return (
     <>
       <div className='pictoplan-box'>

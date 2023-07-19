@@ -1,11 +1,13 @@
 import React from 'react'
 import './ShowPictoModel.css'
-import { PropTypes } from '@mui/material'
 
-function ShowPictoModel() {
+
+function ShowPictoModel({ handleShowBigPicto, pictoId }) {
+
+
   return (
     <div>
-        <img className='big-picto' src={`../../../public/Images/${id}.png`} />
+        <img className='big-picto-show' onClick= {handleShowBigPicto} src={`../../../public/Images/${pictoId}.png`} />
     </div>
   )
 }
